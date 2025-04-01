@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Курси</title>
+
+<style>
+            body {
+            background-color: #264e58;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; 
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .header-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #6b858c;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .nav-list {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-list li {
+            margin: 0 15px;
+        }
+
+        .nav-list a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .nav-list a:hover {
+            color: #ff7f50;
+        }
+
+        .logo img {
+            width: 75px; 
+            height: auto;
+        }
+
+        .translate-btn {
+            background-color: #1b2538; 
+            color: #ffffff;
+            padding: 8px 15px;
+            font-size: 14px;
+            cursor: pointer;
+        
+            transition: background-color 0.3s;
+            
+        }
+        
+        .header {
+            text-align: center;
+            background-color: #6b858c;
+            padding: 20px 20px;
+            color: #fff;
+            font-size: 32px;
+            font-weight: bold;
+            border-bottom: 5px solid #ff7f50;
+    }
+
+        main {
+            flex: 1; 
+        }
+
+        .translate-btn:hover {
+            background-color: #ff7f50;
+        }
+        main {
+            flex: 1; 
+        }
+        footer {
+            background-color: #acb6b9;
+            text-align: center;
+            padding: 15px 10px;
+            border-top: 3px solid #ccc;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #26384a;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ff7f50;
+}
+
+        .b1 {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .b1:hover {
+            background-color: #000000;
+        }
+
+
+        .text2 {
+            font-size: 16px;
+            color: #f1f1f1;
+            max-width: 700px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+            text-align: left;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between; 
+            padding: 20px;
+        }
+        a:hover .b1 {
+            background-color: #ff7f50; 
+        }
+        .left-links {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; 
+            max-width: 45%; 
+        }
+
+
+        .right-links {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; 
+            max-width: 45%; 
+}
+</style>
+
+<header>
+    <div class="header">
+        Інструменти для тестувальника
+    </div>
+    <div class="header-navigation">
+        <div class="logo">
+            <a href="newsite 1.html">
+                <img class="img-logo" src="Testing.png" alt="Лого">
+            </a>
+        </div>
+        <ul class="nav-list">
+            <li><a href="newsite 1.html">Головна</a></li>
+            <li><a href="bugtools.html">Інструменти для баг репортів</a></li>
+            <li><a href="testcasetools (1).html">Інструменти для тест кейсів</a></li>
+            <li><a href="automatisation.html">Інструменти автоматизації</a></li>
+            <li><a href="testingtools (1).html">Інші інструменти</a></li>
+            <li><a href="video.html">Курси</a></li>
+        </ul>
+        <button class="translate-btn" onclick="changeLanguage()">English</button>
+    </div>
+</header>
+<main>        
+            <div class="container">
+                <div class="left-links">
+                    <a href="https://www.udemy.com"><button class="b1">Udemy</button></a>
+                    <p class="text2">Udemy має багато курсів з тестування програмного забезпечення, включаючи роботу з інструментами для створення тест-кейсів і баг-репортів, такими як Jira, TestRail, Bugzilla, Quality Center і іншими.</p>
+        
+                    <a href="https://www.coursera.org"><button class="b1">Coursera</button></a>
+                    <p class="text2">На Coursera ви знайдете курси з управління якістю програмного забезпечення, а також інструменти для написання тест-кейсів і баг-репортів, такі як Jira, TestRail і інші. Курси надаються університетами і великими компаніями.</p>
+        
+                    <a href="https://www.linkedin.com/learning"><button class="b1">LinkedIn Learning</button></a>
+                    <p class="text2">LinkedIn Learning пропонує курси з використання інструментів для тестування, включаючи створення тест-кейсів і баг-репортів, таких як Jira, TestRail і інших популярних інструментів для тестувальників.</p>
+                    
+                    <a href="https://www.gurock.com/testrail/"><button class="b1">TestRail</button></a>
+                    <p class="text2">TestRail — це популярний інструмент для управління тестами. Вебсайт пропонує навчальні ресурси, документацію та курси для роботи з TestRail, включаючи створення тест-кейсів і баг-репортів.</p>
+                </div>
+        
+                <div class="right-links">
+                    <a href="https://www.youtube.com"><button class="b1">YouTube</button></a>
+                    <p class="text2">На YouTube можна знайти багато безкоштовних відеоуроків по роботі з інструментами для створення тест-кейсів і баг-репортів. Ви можете знайти навчання по Jira, Bugzilla, TestRail, Quality Center та інших інструментах.</p>
+        
+                    <a href="https://www.pluralsight.com"><button class="b1">Pluralsight</button></a>
+                    <p class="text2">Платформа з великою кількістю курсів для тестувальників програмного забезпечення. Pluralsight пропонує навчання по роботі з різними інструментами для тестування і створення тест-кейсів, включаючи баг-репорти та автоматизацію тестів.</p>
+        
+                    <a href="https://testautomationu.applitools.com"><button class="b1">TestAutomationU</button></a>
+                    <p class="text2">Безкоштовна платформа, що пропонує курси для автоматизованого тестування, включаючи інструменти для створення тест-кейсів і баг-репортів. Вони мають навчання по різних інструментах, таких як Selenium, Jira, TestRail.</p>
+        
+                    <a href="https://www.qaiusa.com"><button class="b1">Quality Assurance Institute</button></a>
+                    <p class="text2">QAI пропонує сертифікаційні курси та навчання по якості програмного забезпечення, включаючи роботу з інструментами для створення тест-кейсів і баг-репортів.</p>
+        
+                    
+                </div>
+            </div>
+        
+</main>
+          
+<footer>
+    <h4>Робота учнів школи IT STEP.</h4>
+    <p><a href="https://cloud.itstep.org">Зв'язатися з нами</a></p>
+    <p><a href="support.html">Задати своє питання</a></p>
+</footer>
+
+
+</html>

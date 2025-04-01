@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Інструменти для Баг Репортів</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+</head>
+<body>
+    <style>
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; 
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif; 
+        background-color: #264e58; 
+    }
+
+
+    .header-navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #6b858c;
+        padding: 10px 20px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .nav-list {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-list li {
+        margin: 0 15px;
+    }
+
+    .nav-list a {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+    .nav-list a:hover {
+        color: #ff7f50;
+    }
+
+    .logo img {
+        width: 75px; 
+        height: auto;
+    }
+
+    .translate-btn {
+        background-color: #1b2538; 
+        color: #ffffff;
+        padding: 8px 15px;
+        font-size: 14px;
+        cursor: pointer;
+    
+        transition: background-color 0.3s;
+        
+    }
+    .header {
+            text-align: center;
+            background-color: #6b858c;
+            padding: 20px 20px;
+            color: #fff;
+            font-size: 32px;
+            font-weight: bold;
+            border-bottom: 5px solid #ff7f50;
+    }
+    main {
+        flex: 1; 
+    }
+
+    .translate-btn:hover {
+        background-color: #ff7f50;
+    }
+
+    .cards-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 35px;
+        flex-wrap: wrap; 
+    }
+
+    .card-container {
+        
+        width: 450px; 
+        height: 350px; 
+    }
+
+   
+    .card {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: transform 0.6s ease-in-out;
+        cursor: pointer;
+        border-radius: 15px;
+        background: #81888a; 
+    }
+
+    
+    .card.flipped {
+        transform: rotateY(180deg);
+    }
+
+    .card-front, .card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; 
+        padding: 25px;
+        border-radius: 15px;
+        box-sizing: border-box;
+    }
+
+  
+    .card-front {
+        background: #c8cac7; 
+        color: #094737; 
+        text-align: center;
+    }
+
+    .card-front img {
+        width: 150px;
+        height: auto; 
+        margin-bottom: 5px;
+        object-fit: contain; 
+    }
+
+    .card-front p {
+        font-size: 40px;
+        font-weight: normal;
+        margin-bottom: 15px;
+    }
+
+    
+    .card-back {
+        background: #1b3c43; 
+        color: #fff;
+        text-align: left;
+        transform: rotateY(180deg); 
+        font-size: 14px;
+        padding: 20px;
+    }
+
+    .card-back p {
+        font-size: 16px;
+        margin-bottom: 15px;
+        line-height: 1.5; 
+    }
+
+    .card-back a {
+        color: #254e58;
+        text-decoration: none;
+        font-weight: normal;
+        background-color: #d2d7d8; 
+        padding: 12px 25px;
+        border-radius: 5px;
+        font-size: 13px;
+        transition: background-color 0.3s;
+    }
+
+    .card-back a:hover {
+        background-color: #ff7f50; 
+    }
+    
+
+    main {
+        flex: 1; 
+    }
+
+    footer {
+            background-color: #acb6b9;
+            text-align: center;
+            padding: 15px 10px;
+            border-top: 3px solid #ccc;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #26384a;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ff7f50;
+}
+</style>
+
+
+<header>
+    <div class="header">
+        Інструменти для тестувальника
+    </div>
+    <div class="header-navigation">
+        <div class="logo">
+            <a href="newsite 1.html">
+                <img class="img-logo" src="Testing.png" alt="Лого">
+            </a>
+        </div>
+        <ul class="nav-list">
+            <li><a href="newsite 1.html">Головна</a></li>
+            <li><a href="bugtools.html">Інструменти для баг репортів</a></li>
+            <li><a href="testcasetools (1).html">Інструменти для тест кейсів</a></li>
+            <li><a href="automatisation.html">Інструменти автоматизації</a></li>
+            <li><a href="testingtools (1).html">Інші інструменти</a></li>
+            <li><a href="courses.html">Курси</a></li>
+        </ul>
+        <button class="translate-btn" onclick="changeLanguage()">English</button>
+    </div>
+</header>
+<main> 
+<div class="cards-container">
+    <div class="card-container">
+        <div class="card" onclick="toggleCard(this)">
+            <div class="card-front">
+                <img src="https://jmeter.apache.org/images/asf-logo.svg" alt="Apache JMeter Logo">
+                <p>Apache JMeter</p>
+            </div>
+            <div class="card-back">
+                <p>Apache JMeter — це популярний інструмент з відкритим вихідним кодом для тестування навантаження, продуктивності та функціональності веб-додатків.</p>
+                <p>JMeter підтримує різні типи тестів, зокрема тестування навантаження, стрес-тестування, тестування продуктивності, а також функціональні тести для вебсайтів та вебсервісів.</p>
+                <a href="https://jmeter.apache.org/" target="_blank">Офіційна сторінка</a>
+            </div>
+        </div>
+    </div>
+
+  
+    <div class="card-container">
+        <div class="card" onclick="toggleCard(this)">
+            <div class="card-front">
+                <img src="https://gatling.io/hs-fs/hubfs/Gatling-logo-RVB.png?width=1281&height=222&name=Gatling-logo-RVB.png" alt="Gatling Logo">
+                <p>Gatling</p>
+            </div>
+            <div class="card-back">
+                <p>Gatling — це популярний інструмент з відкритим вихідним кодом для тестування навантаження та продуктивності, орієнтований на веб-додатки.</p>
+                <p>Gatling дозволяє проводити стрес-тестування, навантажувальні тести та тести на продуктивність для перевірки стабільності систем під високим навантаженням.</p>
+                <a href="https://gatling.io/" target="_blank">Офіційна сторінка</a>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="card-container">
+        <div class="card" onclick="toggleCard(this)">
+            <div class="card-front">
+                <img src="https://th.bing.com/th/id/OIP.DMTfM26XGoaULINkIq9SNQHaDt?rs=1&pid=ImgDetMain" alt="Burp Suite Logo">
+                <p>Burp Suite </p>
+            </div>
+            <div class="card-back">
+                <p>Burp Suite — це популярний набір інструментів для тестування безпеки веб-додатків. Він надає потужний набір функцій для виявлення вразливостей і проведення пентестів (тестів на проникнення) на веб-сайтах та веб-сервісах. </p>
+                    <p>Burp Suite дозволяє виявляти різні типи вразливостей, зокрема SQL-ін'єкції, XSS (міжсайтові скриптові атаки), порушення контролю доступу та інші проблеми безпеки.</p>
+    
+                <a href="https://portswigger.net/burp" target="_blank">Офіційна сторінка</a>
+            </div>
+        </div>
+    </div>
+
+   
+    <div class="card-container">
+        <div class="card" onclick="toggleCard(this)">
+            <div class="card-front">
+                <img src= "https://junit.org/junit5/assets/img/junit5-logo.png" alt="JUnit 5 Logo">
+                <p>JUnit 5</p>
+            </div>
+            <div class="card-back">
+                <p>JUnit — це фреймворк для модульного тестування в мові програмування Java. Він є одним з найбільш популярних інструментів для тестування програмного коду в Java-середовищі і дозволяє автоматизувати процес тестування окремих одиниць коду (методів або класів), що забезпечує їх правильність і стабільність.</p>
+            
+                <a href="https://junit.org/junit5/" target="_blank">Офіційна сторінка</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-container">
+        <div class="card" onclick="toggleCard(this)">
+            <div class="card-front">
+                <img src="https://wave.webaim.org/img/wavelogo.svg" alt="WAWE Logo">
+                <p>WAWE</p>
+            </div>
+            <div class="card-back">
+                <p>WAVE (Web Accessibility Evaluation Tool) — це інструмент для оцінки доступності веб-сторінок, розроблений компанією WebAIM (Web Accessibility In Mind). </p>
+                    <p>Основна мета WAWE — допомогти веб-розробникам, дизайнерам та тестувальникам у виявленні проблем із доступністю веб-сайтів для людей з обмеженими можливостями.</p>
+
+    
+                <a href="https://wave.webaim.org/" target="_blank">Офіційна сторінка</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="card-container">
+        <div class="card" onclick="toggleCard(this)">
+            <div class="card-front">
+                <img src="https://1.bp.blogspot.com/-Q86XGVJahug/Xm-aQfgtuMI/AAAAAAAAAcA/qqPQeihI39EbG2N87jG65xfnCdvF85-WQCLcBGAsYHQ/s1600/docker.png" alt="Docker Logo">
+                <p>Docker</p>
+            </div>
+            <div class="card-back">
+                <p>Docker — це платформа для автоматизації розгортання, масштабування та управління контейнеризованими додатками. Вона дозволяє розробникам упаковувати програмне забезпечення в контейнери, що є легкими, ізольованими середовищами, які можуть запускатися на будь-якому сервері, що підтримує Docker, без необхідності враховувати залежності операційної системи або інші компоненти.</p>
+               
+                
+                <a href="https://www.docker.com/" target="_blank">Офіційна сторінка</a>
+            </div>
+        </div>
+    </div>
+   
+
+                    
+   
+</main>        
+<footer>
+    <h4>Робота учнів школи IT STEP.</h4>
+    <p><a href="https://cloud.itstep.org">Зв'язатися з нами</a></p>
+    <p><a href="support.html">Задати своє питання</a></p>
+</footer>
+
+</div>
+
+
+<script>
+    function toggleCard(card) {
+        card.classList.toggle("flipped");
+    }
+</script>
+
+
+</body>
+</html>

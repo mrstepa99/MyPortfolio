@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Інструменти для тестувальника</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #264e58;
+        }
+
+        .header-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #6b858c;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .nav-list {
+         display: flex;
+         justify-content: space-between;
+         border: 5px solid #ff7f50;
+        }
+
+        .nav-list li {
+            margin: 0 15px;
+        }
+
+        .nav-list a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .nav-list a:hover {
+            color: #ff7f50;
+        }
+
+        .logo img {
+            width: 75px;
+            height: auto;
+        }
+
+        .translate-btn {
+            background-color: #1b2538;
+            color: #ffffff;
+            padding: 8px 15px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .translate-btn:hover {
+            background-color: #ff7f50;
+        }
+
+        .header {
+            text-align: center;
+            background-color: #6b858c;
+            padding: 20px 20px;
+            color: #fff;
+            font-size: 32px;
+            font-weight: bold;
+            border-bottom: 5px solid #ff7f50;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        .main-content {
+            text-align: center;
+            padding: 20px;
+            font-size: 16px;
+            color: #f1f1f1;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .text {
+            width: 50%;
+            font-size: 16px;
+            color: #f1f1f1;
+            max-width: 700px;
+            margin-bottom: 20px;
+            line-height: 1.8;
+            text-align: left;
+        }
+
+        .images {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .images img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #acb6b9;
+            text-align: center;
+            padding: 15px 10px;
+            border-top: 3px solid #ccc;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #26384a;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ff7f50;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        Інструменти для тестувальника
+    </div>
+
+    <div class="header-navigation">
+        <div class="logo">
+            <a href="newsite 1.html">
+                <img class="img-logo" src="Testing.png" alt="Лого">
+            </a>
+        </div>
+        <ul class="nav-list">
+            <li><a href="newsite 1.html">Головна</a></li>
+            <li><a href="bugtools.html">Інструменти для баг репортів</a></li>
+            <li><a href="testcasetools (1).html">Інструменти для тест кейсів</a></li>
+            <li><a href="automatisation.html">Інструменти автоматизації</a></li>
+            <li><a href="testingtools (1).html">Інші інструменти</a></li>
+            <li><a href="courses.html">Курси</a></li>
+        </ul>
+        <button class="translate-btn" onclick="changeLanguage()">English</button>
+    </div>
+
+    <main>
+        <div class="main-content">
+            <div class="content">
+                <div class="text">
+                    <p>Тестування програмного забезпечення — це процес перевірки якості програмного продукту на всіх етапах його розробки. Важливою метою тестування є виявлення багів і помилок до того, як продукт потрапить до кінцевого користувача.</p>
+
+                    <p>Тестувальники допомагають компаніям забезпечити високий рівень якості, що не тільки покращує досвід користувача, але й значно знижує витрати на виправлення помилок у кінцевому продукті.</p>
+
+                    <div class="section-title">Чому тестування важливе?</div>
+                    <p>Тестування програмного забезпечення — це не просто перевірка функціональності, але й перевірка надійності, безпеки, продуктивності та зручності користування. Ось кілька причин, чому тестування є невід'ємною частиною розробки програмного забезпечення:</p>
+
+                    <ul>
+                        <li><strong>Якість продукту:</strong> Тестування дозволяє виявити і виправити помилки ще до того, як продукт буде використаний кінцевими користувачами.</li>
+                        <li><strong>Безпека:</strong> Виявлення вразливих місць програмного забезпечення запобігає можливим атакам зловмисників.</li>
+                        <li><strong>Продуктивність:</strong> Тестування допомагає забезпечити, щоб програма працювала швидко і не перевантажувала систему.</li>
+                        <li><strong>Відповідність вимогам:</strong> Тестування підтверджує, що продукт відповідає вимогам замовника і стандартам.</li>
+                    </ul>
+
+                    <div class="section-title">Що має знати кожен тестувальник?</div>
+                    <p>Тестувальники повинні не тільки знати, як працювати з інструментами для тестування, але й розуміти процес розробки програмного забезпечення і як їх тестування впливає на кінцевий продукт. Ось кілька корисних порад для тестувальників:</p>
+                    <ul>
+                        <li><strong>Розумійте бізнес-вимоги:</strong> Зрозумійте, які проблеми має вирішити ваш продукт, і як це впливає на користувачів.</li>
+                        <li><strong>Комунікація з розробниками:</strong> Потрібно ефективно взаємодіяти з розробниками, щоб точніше визначати проблеми та разом шукати їх рішення.</li>
+                        <li><strong>Постійне навчання:</strong> Індустрія програмування швидко змінюється, тому важливо постійно навчатися новим методам тестування та використовувати актуальні інструменти.</li>
+                        <li><strong>Автоматизація тестів:</strong> Ознайомлення з інструментами для автоматизації тестування допомагає зменшити рутинну роботу і зосередитися на більш важливих задачах.</li>
+                    </ul>
+                </div>
+
+                <div class="images">
+                    <img src="https://pics.craiyon.com/2024-09-10/2IdB0NQjQ42joUV27UAz6w.webp" alt="Image 1">
+                    <img src="https://pics.craiyon.com/2024-09-11/bPFg69CEQsKj5yyDm73_rw.webp" alt="Image 2">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h4>Робота учнів школи IT STEP.</h4>
+        <p><a href="https://cloud.itstep.org">Зв'язатися з нами</a></p>
+        <p><a href="support.html">Задати своє питання</a></p>
+    </footer>
+
+   
+</body>
+</html>

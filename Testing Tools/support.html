@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+body {
+  font-family: Arial, sans-serif;
+  background-color: #264e58;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 50%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  color: #555;
+}
+
+input[type="email"], textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+input[type="email"]:focus, textarea:focus {
+  border-color: #3b883d;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color:  #ff7f50;
+}
+.bb {  
+  color: #333;  
+  background-color: #ffffff;
+            border-radius: 100px;
+            height: 130px;
+            width: 130px;
+            margin-top: 50px;
+            margin-left: 50px;
+            padding: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+     }
+
+        .bb:hover{
+            background-color: #ff7f50; /* Цвет фона при наведении */
+        }
+
+
+</style>
+<body>
+  <div class bb>
+    <a href="newsite 1.html"><button class="bb"><strong>← На Головну</strong></button></a>
+  </div>
+  
+    <div class="container">
+        <h1>Зв'язок з адміністрацією</h1>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="email">Ваш email:</label>
+            <input type="email" minlength="5" maxlength="50" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Ваше повідомлення:</label>
+            <textarea id="message" minlength="10" maxlength="500" name="message" rows="10" required></textarea>
+          </div>
+          <button type="submit">Відправити</button>
+        </form>
+      </div>
+</body>
+</html>
